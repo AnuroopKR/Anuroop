@@ -7,12 +7,8 @@ import rehypePrism from "rehype-prism-plus";
 import remarkGfm from "remark-gfm"; // GitHub Flavored Markdown (for tables, strikethrough, etc.)
 import "prismjs/themes/prism-okaidia.css";
 
-interface BlogPostProps {
-  params: { slug: string };
-}
-
-// Server Component to fetch and render the blog post
-const BlogPost = ({ params }: BlogPostProps) => {
+// Define the BlogPost component and interface
+const BlogPost = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
 
   // Find the post based on the slug
