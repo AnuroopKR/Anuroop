@@ -1,5 +1,3 @@
-
-
 // app/blog/[slug]/page.tsx
 import { blogArticles } from "../../../data/blogdata"; // Import blog data
 import Image from "next/image";
@@ -8,6 +6,7 @@ import ReactMarkdown from "react-markdown"; // Import react-markdown
 import rehypePrism from "rehype-prism-plus";
 import remarkGfm from "remark-gfm"; // GitHub Flavored Markdown (for tables, strikethrough, etc.)
 import "prismjs/themes/prism-okaidia.css";
+
 // Server Component to fetch and render the blog post
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const { slug } = params;
@@ -52,12 +51,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         {/* Content */}
         <div className="prose lg:prose-xl max-w-none text-lg text-gray-700 leading-relaxed mb-8">
           {/* Convert markdown content to HTML */}
-          <ReactMarkdown remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypePrism]}
-           components={{
-            h2: ({  ...props }) => <h1 className="text-2xl font-bold mt-2" {...props} />,
-            // a: ({ node, ...props }) => <a className="text-orange-500" {...props} />,
-          }}>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypePrism]}>
             {post.content}
           </ReactMarkdown>
         </div>
