@@ -7,8 +7,12 @@ import rehypePrism from "rehype-prism-plus";
 import remarkGfm from "remark-gfm"; // GitHub Flavored Markdown (for tables, strikethrough, etc.)
 import "prismjs/themes/prism-okaidia.css";
 
+interface BlogPostProps {
+  params: { slug: string };
+}
+
 // Server Component to fetch and render the blog post
-export default function BlogPost({ params }: { params: { slug: string } }) {
+const BlogPost = ({ params }: BlogPostProps) => {
   const { slug } = params;
 
   // Find the post based on the slug
@@ -63,4 +67,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       </div>
     </div>
   );
-}
+};
+
+export default BlogPost;
