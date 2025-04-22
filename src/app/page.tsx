@@ -3,8 +3,6 @@ import BlogSection from "@/components/Blog";
 import Contact from "@/components/Contact";
 import ProjectsSection from "@/components/Projectsession";
 import SkillsSection from "@/components/Skill";
-import { Festive } from "next/font/google";
-import Image from "next/image";
 
 export default function Home() {
   return (
