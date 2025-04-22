@@ -55,7 +55,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           <ReactMarkdown remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypePrism]}
            components={{
-            h2: ({ node, ...props }) => <h1 className="text-2xl font-bold mt-2" {...props} />,
+            h2: ({  ...props }) => <h1 className="text-2xl font-bold mt-2" {...props} />,
             // a: ({ node, ...props }) => <a className="text-orange-500" {...props} />,
           }}>
             {post.content}

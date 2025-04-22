@@ -1,5 +1,6 @@
-// pages/about-details.tsx
+// pages/about-details.tsximg
 
+import Image from 'next/image';
 import React from 'react';
 
 const AboutDetails = () => {
@@ -29,11 +30,7 @@ const AboutDetails = () => {
             </p>
           </div>
           <div className='p-30 rounded-xl shadow-lg m-10'>
-          <img
-            src="/aboutpage.svg"
-            alt="Code Journey"
-            className="w-full h-auto text-orange-400 "
-          />
+            <Image src={'/aboutpage.svg'} alt='/aboutpage'/>
           </div>
         </div>
 
@@ -70,14 +67,16 @@ const AboutDetails = () => {
             <li><strong>Clean Code:</strong> I value writing readable and maintainable code that scales well.</li>
             <li><strong>User Experience:</strong> I strive to build products that are intuitive and enjoyable to use.</li>
             <li><strong>Problem Solving:</strong> I love challenges and am passionate about solving real-world problems with code.</li>
-            <li><strong>Learning & Sharing:</strong> Whether it’s through blogs or helping others, knowledge grows when shared.</li>
-          </ul>
+            <li><strong>Learning &amp; Sharing:</strong> Whether it’s through blogs or helping others, knowledge grows when shared.</li>
+            </ul>
         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-10">
           <h3 className="text-xl font-semibold text-orange-400 mb-2">Want to collaborate or just say hello?</h3>
-          <p className="text-gray-600 mb-4">Feel free to reach out — I'm always open to new opportunities and conversations!</p>
+          <p className="text-gray-600 mb-4">
+  Feel free to reach out &mdash; I'm always open to new opportunities and conversations!
+</p>
           <a
             href="mailto:your.email@example.com"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200"
