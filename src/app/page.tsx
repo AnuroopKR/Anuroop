@@ -26,8 +26,8 @@ export default function Home() {
         
         {/* Text Block */}
         <div className="text-center md:text-left max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I’m Anuroop K R</h1>
-          <h2 className="text-2xl font-semibold mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I&apos;m Anuroop K R</h1>
+        <h2 className="text-2xl font-semibold mb-4">
             Full Stack Developer | React | Node.js | MongoDB
           </h2>
           <p className="text-lg mb-6">
