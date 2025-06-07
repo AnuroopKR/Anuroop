@@ -5,6 +5,7 @@ import Image from 'next/image';
 const skills = {
   'Front-End': [
     { name: 'React', icon: '/icons/react.svg' },
+    { name: 'Next js', icon: '/icons/nextjs.svg' },
     { name: 'Redux', icon: '/icons/redux.svg' },
     { name: 'JavaScript', icon: '/icons/javascript.svg' },
     { name: 'TypeScript', icon: '/icons/typescript.svg' },
@@ -19,15 +20,18 @@ const skills = {
   ],
   'Database': [
     { name: 'MongoDB', icon: '/icons/mongodb.svg' },
+    { name: 'Mysql', icon: '/icons/mysql.svg' },
+    { name: 'Postgresql', icon: '/icons/postgresql.svg' },
     { name: 'Firebase', icon: '/icons/firebase.svg' },
   ],
   'Tools & Platforms': [
     { name: 'Git', icon: '/icons/git.svg' },
     { name: 'GitHub', icon: '/icons/github.svg' },
     { name: 'Postman', icon: '/icons/postman.svg' },
-    { name: 'VS Code', icon: '/icons/vscode.svg' },
+    { name: 'VS Code', icon: '/icons/vs-code.svg' },
     { name: 'Netlify', icon: '/icons/netlify.svg' },
     { name: 'Vercel', icon: '/icons/vercel.svg' },
+    { name: 'aws', icon: '/icons/aws.svg' },
   ],
 };
 

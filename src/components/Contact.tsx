@@ -49,7 +49,7 @@ const Contact = () => {
         </form>
 
         <p className="text-sm text-gray-500 mt-6">
-          Or email me directly: <span className="text-orange-500 font-medium">your.email@example.com</span>
+          Or email me directly: <span className="text-orange-500 font-medium">anuroopkr13@gmail.com</span>
         </p>
       </div>
     </section>

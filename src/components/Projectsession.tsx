@@ -23,7 +23,7 @@ const projects: Project[] = [
     techStack: ["Node.js", "Express", "MongoDB", "EJS"],
     role: "Full Stack Developer",
     github: "https://github.com/your-username/shoevibe",
-    demoEmbed: "https://shoevibe-demo.vercel.app",
+    demoEmbed: "https://shoevibe.onrender.com",
     image: "/project/shoevibe.png",
   },
   {
@@ -43,7 +43,7 @@ const projects: Project[] = [
     techStack: ["React", "useContext", "MongoDB", "Node.js", "Express"],
     role: "Full Stack Developer",
     github: "https://github.com/your-username/olx-clone",
-    demoEmbed: "https://rins.vercel.app",
+    demoEmbed: "https://olxclone-rho.vercel.app",
     image: "/olx-clone.png",
   },
   {
