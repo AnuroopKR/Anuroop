@@ -22,7 +22,7 @@ const AboutDetails = () => {
             More About Me
           </h1>
           <p className="text-lg text-gray-600">
-            I’m Anuroop, a full stack developer who turns ideas into web experiences using React, Node.js, and MongoDB.
+            {`I’m Anuroop, a full stack developer who turns ideas into web experiences using React, Node.js, and MongoDB.`}
           </p>
         </motion.div>
 
@@ -128,7 +128,7 @@ const AboutDetails = () => {
             Want to collaborate or just say hello?
           </h3>
           <p className="text-gray-600 mb-4">
-            I'm always open to exciting opportunities or just a friendly chat — feel free to reach out!
+            I&apos;m always open to exciting opportunities or just a friendly chat — feel free to reach out!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -151,10 +151,10 @@ const AboutDetails = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mt-8">
           <a href="https://github.com/anuroop" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/github.svg" alt="GitHub" className="w-6 h-6" />
+            <Image src="/icons/github.svg" alt="GitHub" className="w-6 h-6" />
           </a>
           <a href="https://linkedin.com/in/anuroop" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
+            <Image src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
           </a>
         </div>
       </div>
