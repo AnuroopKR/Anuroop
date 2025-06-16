@@ -22,7 +22,7 @@ const AboutDetails = () => {
             More About Me
           </h1>
           <p className="text-lg text-gray-600">
-            {`I’m Anuroop, a full stack developer who turns ideas into web experiences using React, Node.js, and MongoDB.`}
+            I&apos;m  Anuroop, a full stack developer who turns ideas into web experiences using React, Node.js, and MongoDB.
           </p>
         </motion.div>
 
@@ -151,11 +151,19 @@ const AboutDetails = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mt-8">
           <a href="https://github.com/anuroop" target="_blank" rel="noopener noreferrer">
-            <Image src="/icons/github.svg" alt="GitHub" className="w-6 h-6" />
-          </a>
+<Image
+  src="/icons/github.svg"
+  alt="GitHub"
+  width={24}
+  height={24}
+/>          </a>
           <a href="https://linkedin.com/in/anuroop" target="_blank" rel="noopener noreferrer">
-            <Image src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
-          </a>
+<Image
+  src="/icons/linkedin.svg"
+  alt="LinkedIn"
+  width={24}
+  height={24}
+/>          </a>
         </div>
       </div>
     </section>

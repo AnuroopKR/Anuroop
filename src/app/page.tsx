@@ -34,12 +34,14 @@ const fadeUp = {
 };
 
 export default function Home() {
-  const contactRef = useRef(null);
-  const projectRef=useRef(null)
+  const contactRef = useRef<HTMLElement>(null);
+const projectRef = useRef<HTMLElement>(null);
 
-  const scrollToContact = (param:any) => {
-    param.current?.scrollIntoView({ behavior: "smooth" });
-  };
+
+  const scrollToContact = (param: React.RefObject<HTMLElement | null>) => {
+  param.current?.scrollIntoView({ behavior: "smooth" });
+};
+
 
   return (
     <>
