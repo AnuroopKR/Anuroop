@@ -37,7 +37,7 @@ const skills = {
 
 export default function SkillsSection() {
   return (
-    <section className="py-12 px-4  md:px-12 bg-white" id="skills">
+    <section className="py-12 px-4  md:px-12 bg-black/40 backdrop-blur-md" id="skills">
       <h2 className="text-3xl font-bold text-center mb-10 text-orange-600">Tech Stack</h2>
 
       {Object.entries(skills).map(([category, items]) => (
@@ -52,7 +52,7 @@ export default function SkillsSection() {
                 <div className="w-12 h-12 relative mb-2">
                   <Image src={skill.icon} alt={skill.name} fill className="object-contain" />
                 </div>
-                <span className="text-sm text-orange-800">{skill.name}</span>
+                <span className="text-sm text-orange-500">{skill.name}</span>
               </div>
             ))}
           </div>

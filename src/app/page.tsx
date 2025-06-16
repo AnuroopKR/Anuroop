@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden">
+      <section className="relative min-h-[100dvh] overflow-hidden bg-black/50">
         {/* Background */}
         <div className="fixed top-0 left-0 w-full h-screen -z-10">
           <div
@@ -109,16 +109,22 @@ export default function Home() {
       </section>
 
       {/* Other Sections */}
-      <About />
+      <section id="about"><About /></section>
+<section id="skills"><SkillsSection /></section>
+<section id="projects" ref={projectRef}><ProjectsSection /></section>
+<section id="blogs"><BlogSection /></section>
+<section id="contact" ref={contactRef}><Contact /></section>
+
+      {/* <About />
       <SkillsSection />
       <div ref={projectRef}>
         <ProjectsSection />
       </div>
       <BlogSection />
       {/* Wrap Contact in a div with the ref */}
-      <div ref={contactRef}>
+      {/* <div ref={contactRef}>
         <Contact />
-      </div>
+      </div> */} 
     </>
   );
 }
