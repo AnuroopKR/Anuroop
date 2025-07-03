@@ -1,62 +1,9 @@
-
-
 "use client";
 
 import Image from "next/image";
 import { useState } from "react";
-
-interface Project {
-  title: string;
-  description: string;
-  techStack: string[];
-  role: string;
-  github: string;
-  demoEmbed: string;
-  image: string;
-}
-
-const projects: Project[] = [
-  {
-    title: "Shoevibe",
-    description:
-      "Shoevibe is a stylish and user-friendly eCommerce website for shoes and footwear, built with Node.js, Express, MongoDB, and EJS for server-side rendering.",
-    techStack: ["Node.js", "Express", "MongoDB", "EJS"],
-    role: "Full Stack Developer",
-    github: "https://github.com/your-username/shoevibe",
-    demoEmbed: "https://shoevibe.onrender.com",
-    image: "/project/shoevibe.png",
-  },
-  {
-    title: "React Movie App (Netflix Clone)",
-    description:
-      "A Netflix clone built with React, Redux, and Firebase for the authentication system.",
-    techStack: ["React", "Redux", "Firebase"],
-    role: "Full Stack Developer",
-    github: "https://github.com/your-username/netflix-clone",
-    demoEmbed: "https://mynetflix-ashy.vercel.app",
-    image: "/project/mynetflix.png",
-  },
-  {
-    title: "OLX Clone",
-    description:
-      "An OLX clone for classifieds with features like user authentication, profile management, and item listing.",
-    techStack: ["React", "useContext", "MongoDB", "Node.js", "Express"],
-    role: "Full Stack Developer",
-    github: "https://github.com/your-username/olx-clone",
-    demoEmbed: "https://olxclone-rho.vercel.app",
-    image: "/olx-clone.png",
-  },
-  {
-    title: "CRUD Application",
-    description:
-      "A full-stack CRUD application with user authentication and role-based access.",
-    techStack: ["React", "Redux", "Node.js", "Express", "MongoDB"],
-    role: "Full Stack Developer",
-    github: "https://github.com/your-username/crud-app",
-    demoEmbed: "https://rins.vercel.app",
-    image: "/crud-app.png",
-  },
-];
+import projects from "@/data/projectData";
+import { Project } from "@/data/projectData";
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -93,30 +40,29 @@ export default function ProjectsSection() {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-  {project.techStack.map((tech, i) => (
-    <span
-      key={i}
-      className="border border-orange-300 text-orange-300 px-3 py-1 text-sm rounded-full shadow-sm  transition duration-200"
-    >
-      {tech}
-    </span>
-  ))}
-</div>
-
+                  {project.techStack.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="border border-orange-300 text-orange-300 px-3 py-1 text-sm rounded-full shadow-sm  transition duration-200"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
                 <div className="text-sm text-gray-600 mb-4">
                   <span className="font-medium text-gray-800">Role:</span>{" "}
                   {project.role}
                 </div>
                 <div className="flex gap-4">
-                  <a
+                 {project.github&& <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white bg-indigo-600 px-4 py-1.5 rounded-full hover:bg-indigo-700 transition"
                   >
                     GitHub
-                  </a>
+                  </a>}
                   <button
                     onClick={() => setSelectedProject(project)}
                     className="text-emerald-600 border border-green-500 px-4 py-1.5 rounded-full hover:bg-indigo-50 transition"

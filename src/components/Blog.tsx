@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function BlogSection() {
   return (
-    <section id="blog" className="py-20 bg-orange-50 text-gray-800">
+    <section id="blog" className="py-20 bg-white text-gray-800">
       <div className="container mx-auto px-6 md:px-20">
         <h2 className="text-4xl font-bold text-center text-orange-500 mb-12">
           📝 Blogs
@@ -15,7 +15,7 @@ export default function BlogSection() {
           {blogArticles.map((article, index) => (
             <div
               key={index}
-              className="bg-white hover:bg-orange-100 transition duration-300 rounded-2xl shadow-md overflow-hidden border border-orange-200"
+              className="bg-white hover:bg-amber-100 transition duration-300 rounded-2xl shadow-md overflow-hidden border border-orange-200"
             >
               <div className="relative w-full h-48">
                 <Image
@@ -51,7 +51,6 @@ export default function BlogSection() {
             </div>
           ))}
         </div>
-        <Link href={"/addblog"}>add blog</Link>
       </div>
     </section>
   );
